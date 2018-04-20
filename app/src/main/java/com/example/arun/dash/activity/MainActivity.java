@@ -1,13 +1,19 @@
 package com.example.arun.dash.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
 
 import com.example.arun.dash.R;
+import com.example.arun.dash.TextActivity;
 import com.example.arun.dash.adapter.AdapterMainActivity;
 import com.example.arun.dash.dataModel.DataModelMainActivity;
 
@@ -73,14 +79,18 @@ public class MainActivity extends AppCompatActivity {
 
     GridLayoutManager gridLayoutManager;
     RecyclerView recyclerView;
-
+TextView txtgetfrm;
     AdapterMainActivity mAdapter;
     ArrayList<DataModelMainActivity> data;
-
+CardView crdview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+     //  Intent myIntent = getIntent();
+       // myIntent.getExtra("key");
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
@@ -94,7 +104,44 @@ public class MainActivity extends AppCompatActivity {
 
         mAdapter = new AdapterMainActivity(data, MainActivity.this);
         recyclerView.setAdapter(mAdapter);
+        crdview=(CardView)findViewById(R.id.crdview);
+        crdview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), TextActivity.class);
+                startActivity(intent);
+            }
+        });
+
+            txtgetfrm = (TextView)findViewById(R.id.txtgetfrm);
+txtgetfrm.setText("01");
+            txtgetfrm.setText(getIntent().getStringExtra("mytext"));
+
+
+
+
+        //geti();
+
     }
+   /* public void geti()
+    {
+
+
+    txtgetfrm = (TextView)findViewById(R.id.txtgetfrm);
+
+        txtgetfrm.setText(getIntent().getStringExtra("mytext"));
+    }
+*/
+  /*  @Override
+    protected void onResume() {
+
+        super.onResume();
+        txtgetfrm = (TextView)findViewById(R.id.txtgetfrm);
+
+        txtgetfrm.setText(getIntent().getStringExtra("mytext"));
+    }
+*/
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

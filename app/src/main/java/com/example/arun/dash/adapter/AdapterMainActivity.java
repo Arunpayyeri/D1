@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -71,6 +72,7 @@ public class AdapterMainActivity extends RecyclerView.Adapter<RecyclerView.ViewH
         messageViewHolder.textViewName.setText(model.getName());
         messageViewHolder.textViewStatus.setText(model.getStatus());
         messageViewHolder.textViewMobile.setText(model.getMobile());
+
     }
 
     @Override
@@ -91,6 +93,7 @@ public class AdapterMainActivity extends RecyclerView.Adapter<RecyclerView.ViewH
         private TextView textViewStatus;
         private TextView textViewMobile;
         private CardView cardView;
+        private RatingBar ratingBar;
 
         private MessageViewHolder(View itemView, AdapterMainActivity adapter) {
             super(itemView);

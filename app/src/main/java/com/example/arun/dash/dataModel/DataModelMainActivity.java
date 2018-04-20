@@ -9,6 +9,7 @@ public class DataModelMainActivity {
     private String mobile;
 
 
+
     public DataModelMainActivity(int image, String name, String status, String mobile) {
         this.image = image;
         this.name = name;

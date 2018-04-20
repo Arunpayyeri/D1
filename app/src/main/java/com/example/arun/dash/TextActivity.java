@@ -1,14 +1,19 @@
 package com.example.arun.dash;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.arun.dash.activity.MainActivity;
 
 public class TextActivity extends AppCompatActivity {
 TextView text,textg;
-Button btnminus,btnplus,btngminus,btngplus;
+Button btnpass;
+ImageButton btnminus,btnplus,btngminus,btngplus;
 int mint=04;
 int gint=06;
 int n=0;
@@ -16,8 +21,8 @@ int n=0;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text);
-        btnminus=(Button)findViewById(R.id.btnminus);
-        btnplus=(Button)findViewById(R.id.btnplus);
+        btnminus=(ImageButton)findViewById(R.id.btnminus);
+        btnplus=(ImageButton) findViewById(R.id.btnplus);
         text=(TextView)findViewById(R.id.text);
 
         btnplus.setOnClickListener(new View.OnClickListener() {
@@ -35,8 +40,8 @@ int n=0;
             }
         });
         textg=(TextView)findViewById(R.id.textg);
-        btngminus=(Button)findViewById(R.id.btngminus);
-        btngplus=(Button)findViewById(R.id.btngplus);
+        btngminus=(ImageButton) findViewById(R.id.btngminus);
+        btngplus=(ImageButton) findViewById(R.id.btngplus);
         btngplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +57,24 @@ int n=0;
             }
         });
 
+     /*   btnpass=(Button)findViewById(R.id.btnpass);
+        btnpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              //  Intent myIntent = new Intent(TextActivity.this, MainActivity.class);
+                //myIntent.putExtra("key", "value");
+                //startActivity(myIntent);
+
+
+                String text1 = text.getText().toString();
+
+                Intent myIntent = new Intent(TextActivity.this,MainActivity.class);
+                myIntent.putExtra("mytext",text1);
+                finish();
+                startActivity(myIntent);
+
+            }
+        }); */
     }
   /*  public void increase(View view)
     {
