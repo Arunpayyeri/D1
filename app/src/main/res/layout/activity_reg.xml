@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:hint="NAME"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"
+
+        android:background="@drawable/roundededit" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/roundededit" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:hint="PHONE"
+        android:inputType="phone"
+        android:background="@drawable/roundededit" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:background="@drawable/roundededit" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+
+        android:layout_marginBottom="5dp"
+        android:hint="CONFIRM PASSWORD"
+        android:inputType="textPassword"
+        android:background="@drawable/roundededit" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Already have an account? Sign in"/>
+</LinearLayout>

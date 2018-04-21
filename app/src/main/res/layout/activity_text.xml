@@ -91,13 +91,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/rlt1"
-        android:layout_weight="1.5">
+        android:layout_weight="1.2">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SEARCH ROOMS IN"
             android:paddingLeft="10dp"
+            android:textSize="9dp"
             android:layout_marginTop="10dp"
             android:id="@+id/txt1"/>
 
@@ -105,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Al khobar,Saudi Arabia"
-            android:textSize="18dp"
+            android:textSize="12dp"
             android:textColor="#000"
             android:paddingLeft="10dp"
             android:paddingTop="3dp"
@@ -129,11 +130,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5">
+        android:layout_weight="1.2">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CHECK IN"
+            android:textSize="9dp"
             android:layout_marginTop="10dp"
             android:id="@+id/txt2"
             android:paddingLeft="10dp"/>
@@ -142,10 +144,11 @@
             android:layout_height="wrap_content"
             android:textColor="#000"
             android:text="5Apr,Wed"
+            android:textSize="12dp"
             android:textStyle="bold"
             android:layout_below="@+id/txt2"
             android:paddingLeft="10dp"
-            android:textSize="18dp"/>
+            />
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
@@ -154,20 +157,21 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5">
+        android:layout_weight="1.2">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt3"
             android:paddingLeft="10dp"
             android:layout_marginTop="10dp"
+            android:textSize="9dp"
             android:text="CHECK OUT"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6Apr,Thu"
             android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="12dp"
             android:textColor="#000"
             android:paddingLeft="10dp"
             android:layout_below="@+id/txt3"
@@ -180,7 +184,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5">
+        android:layout_weight="1.2">
 
 
         <ImageButton
@@ -198,16 +202,19 @@
             android:layout_height="wrap_content"
             android:textColor="#000"
             android:textStyle="bold"
+            android:textSize="12dp"
             android:layout_centerInParent="true"
+            android:paddingTop="5dp"
             android:text="04" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:textSize="8dp"
+            android:textSize="9dp"
             android:layout_below="@+id/text"
             android:layout_centerInParent="true"
-            android:text="ROOMS"/>
+            android:text="ROOMS"
+            android:paddingBottom="5dp"/>
 
 
         <ImageButton
@@ -230,7 +237,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5">
+        android:layout_weight="1.2">
 
         <ImageButton
             android:id="@+id/btngminus"
@@ -247,15 +254,18 @@
             android:layout_centerInParent="true"
             android:textColor="#000"
             android:textStyle="bold"
+            android:textSize="12dp"
             android:text="06" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:textSize="8dp"
             android:layout_below="@+id/textg"
             android:layout_centerInParent="true"
-            android:text="GUESTS"/>
+            android:layout_marginTop="0dp"
+            android:text="GUESTS"
+            android:textColor="#000"
+            android:textSize="9dp" />
 
         <ImageButton
             android:id="@+id/btngplus"
@@ -277,7 +287,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2.5">
+        android:layout_weight="3.5">
 
         <ImageButton
             android:layout_width="wrap_content"
